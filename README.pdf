@@ -1,0 +1,55 @@
+# Sistema de recomendación de productos
+Este es un sistema de recomendación basado en Machine Learning para una tienda global. En este proyecto se realizó
+un análisis de datos exploratio y la comprensión del negocio.
+
+## Comprensión del negocio
+Se realiza un análisis para comprender el funcionamiento y rentabilidad de la tienda global.
+
+### Análisis de clientes
+* Frecuencia de compra de los clientes: Se evalúa cuantas veces compran los clientes
+* Ingresos y rentabilidad: Se analiza si los clientes frecuentes contribuyen con más ingresos y beneficios
+* Segmentación de rentabilidad: Se identifican los segmenos de clientes más rentables
+* Distribución geográfica: Se examina como se distribuyen los clientes en los países
+
+### Análisis de producto
+* Ventas por País: Se identifican los países con mayores ventas
+* Top 5 Productos más rentables: Se identifican los cinco productos con mayores ventas
+* Relación entre precio y ventas
+* Tiempo de entrega: Se cálcula el tiempo de entrega promedio por estado y se representa gráficamente
+
+
+## Estructura del proyecto
+data/ - Conjunto de datos (Gestionado con DVC)
+notebooks/ - (Comprensión del negocio, Análisis exploratorio de datos)
+src/ - Código fuente
+main.py - Script principal
+requirements.txt - Dependencias del proyecto
+README.md documentación de proyecto
+
+## Instalación 
+1. Clona el repositorio:
+'''bash
+git clone https://github.com/Leoga93/sistema-recomendaci-n.git
+cd sistema-recomendacion
+
+2. Instala las Dependencias
+pip install -r requirements.txt
+
+3. Recuperar los datos con DVC
+dvc pull
+
+## USO
+Entrenar el modelo
+python src/train.py
+
+Hacer predicciones 
+python src/predict.py
+
+## Tecnologías usadas
+* Python
+* Pandas
+* Numpy
+* Matplotlib
+* Seaborn
+* Plotly
+* DVC
