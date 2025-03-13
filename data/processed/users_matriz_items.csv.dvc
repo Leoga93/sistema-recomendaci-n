@@ -1,0 +1,5 @@
+outs:
+- md5: 8105db67594236558020ac97bcfc1882
+  size: 6230759
+  hash: md5
+  path: users_matriz_items.csv

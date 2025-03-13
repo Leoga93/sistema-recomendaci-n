@@ -1,0 +1,19 @@
+model:
+  path: "models/svd_model.pkl"
+  retrain: false
+
+data:
+  products: "data/processed/productos_tecnology.json"
+  interactions_path: "data/processed/users_matriz_items.csv"
+
+recommender:
+  top_n: 5
+
+logging:
+  level: "INFO"                 # Nivel de logging (DEBUG, INFO, WARNING, ERROR)
+  file_predictor: "logs/predict.log"
+  file_main: "logs/main.log"
+  file_error: "logs/error.log"      # Archivo de log
+  rotation:
+  max_bytes: 10485760         # 10 MB de tamaño máximo antes de rotar
+  backup_count: 5             # Número de backups de logs
